@@ -1,0 +1,21 @@
+# core (stand-in smoke runs need only numpy)
+numpy>=1.24
+# real PDF parsing
+pymupdf>=1.23
+# real local models (CPU or GPU)
+torch>=2.1
+transformers>=4.40
+sentence-transformers>=2.7
+accelerate>=0.30
+# optional: 4-bit on GPU
+# bitsandbytes>=0.43
+# optional: OCR (also needs the tesseract binary)
+# pytesseract
+# optional: API
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+httpx>=0.27
+# dev
+pytest>=8
+matplotlib>=3.7
