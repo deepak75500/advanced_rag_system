@@ -54,9 +54,3 @@ Dataset format (JSONL): question, expected answer, supporting PDF, ground-truth 
 CPU runs work but are slow with larger LLMs. Exact RAM/VRAM and latency figures must come from a real run on your
 hardware (the report records peak RAM/VRAM and tokens/s).
 
-## Known limitations
-* Default verification is lexical (fast, deterministic) and can drop correct but heavily paraphrased sentences. The optional
-  LLM double-check / `--judge` metrics are only as reliable as the local judge model; small judges make mistakes.
-* The synthetic corpus is small and templated; results on it say little about real documents. Bring real PDFs and a dataset.
-* OCR is accurate on prose but weaker on dense tables; it has only been tested on synthetic scans, not real photocopies.
-* A 32-item dataset gives wide confidence intervals; most comparisons will honestly come out as ties.
